@@ -22,11 +22,11 @@ import os
 
 
 #data_dir = "/gscratch/kurtlab/brats2023/data/brats-gli/Diff_Data_Final/"
-data_dir = '/gscratch/kurtlab/brats2023/data/brats-gli/diff_cv_final/fold0/'
+data_dir = '/content/drive/MyDrive/MRI_DDPM/'
 
 diffusion_type = 'original' # 'delta' or 'original'
 
-logdir = os.path.join('/gscratch/kurtlab/diffusion_test/log/diff_cv/', diffusion_type, 'fold0/')
+logdir = os.path.join('/content/drive/MyDrive/MRI_DDPM/model_log/', diffusion_type, 'fold0/')
 
 model_save_path = os.path.join(logdir, "model")
 
