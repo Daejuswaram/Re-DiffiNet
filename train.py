@@ -35,7 +35,7 @@ env = "DDP" # or env = "pytorch" if you only have one gpu.
 max_epoch =200
 batch_size = 2
 val_every = 5
-num_gpus = 2
+num_gpus = 1
 device = "cuda:0"
 
 use_UNetopt = True
