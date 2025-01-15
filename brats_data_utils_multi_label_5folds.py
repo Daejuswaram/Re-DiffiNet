@@ -176,7 +176,7 @@ class PretrainDataset(Dataset):
     #     } 
 
 
-  def __getitem__(self, i):
+ def __getitem__(self, i):
     if self.cache:
         return self.cache_data[i]
 
@@ -200,6 +200,7 @@ class PretrainDataset(Dataset):
             else:
                 # If no valid data can be found, raise an error
                 raise IndexError(f"Cannot find valid data starting from index {i}. Check the dataset.")
+
 
 
 
