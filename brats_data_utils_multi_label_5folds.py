@@ -176,7 +176,7 @@ class PretrainDataset(Dataset):
     #     } 
 
 
-     def __getitem__(self, i):
+    def __getitem__(self, i):
         if self.cache:
             return self.cache_data[i]
     
