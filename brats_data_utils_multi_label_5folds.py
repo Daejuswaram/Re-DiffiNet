@@ -191,7 +191,7 @@ class PretrainDataset(Dataset):
             # Log the issue
             with open("./bugs.txt", "a") as f:  # Use "a" to append, avoiding overwriting the file
                 f.write(f"Bug in dataloader at index {attempt}, file: {self.datalist[attempt]}, error: {str(e)}\n")
-            
+
             # Handle edge cases for out-of-bound indices
             if attempt < len(self.datalist) - 1:
                 attempt += 1  # Move forward to the next index
@@ -200,6 +200,7 @@ class PretrainDataset(Dataset):
             else:
                 # If no valid data can be found, raise an error
                 raise IndexError(f"Cannot find valid data starting from index {i}. Check the dataset.")
+
 
 
     def __len__(self):
