@@ -30,7 +30,7 @@ logdir = os.path.join('/content/drive/MyDrive/MRI_DDPM/model_log/', diffusion_ty
 
 model_save_path = os.path.join(logdir, "model")
 
-env = "DDP" # or env = "pytorch" if you only have one gpu.
+env = "pytorch" # or env = "pytorch" if you only have one gpu.
 
 max_epoch =200
 batch_size = 2
